@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-color: #f2726a;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #130f40, #535c68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+.card {
+    background-color: #242628;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin-top: 40px;
+}
+
+.card p {
+    color: var(--pink-color);
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+.card-img {
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--pink-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(25px);
+    transition: 0.5s;
+}
+
+.card-img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: none;
+    border: none;
+}
+
+.card-social {
+    margin: 25px 0;
+}
+
+.card-social a {
+    margin: 0 25px;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.card-social a:hover {
+    color: var(--pink-color);
+}
+
+.card-button {
+    height: 42px;
+    width: 120px;
+    border: 1px solid var(--pink-color);
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.card-button:hover {
+    background: var(--pink-color);
+    cursor: pointer;
+}
