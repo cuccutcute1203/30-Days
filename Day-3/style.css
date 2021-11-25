@@ -1,0 +1,104 @@
+
+:root {
+    --primary-color: #e26e70;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+}
+
+.open-modal-btn {
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    position: fixed;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-inner {
+    width: 450px;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    overflow: hidden;
+    animation: modalShow 0.5s linear;
+
+}
+
+.modal-header {
+    font-size: 17px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal-header i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.modal-footer button {
+    font-size: 13.3333px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes modalShow {
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
